@@ -1,3 +1,3 @@
 # chronyc-tw
-ntp server at tw timezone.
+ntp server at tw timezone in Docker.
 
