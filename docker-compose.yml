@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ntp:
+    image: chronyc-tw
+    hostname: ntp
+    restart: always
+    privileged: true
+    ports:
+    - 123:123
+    - 123:123/udp
+    environment:
+      - NTP_SERVERS="time1.google.com,time2.google.com,time3.google.com,time4.google.com"
+      - cap-add=SYS_TIME
